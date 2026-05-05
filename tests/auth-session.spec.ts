@@ -1,5 +1,8 @@
 import { test, expect } from '@playwright/test';
 
+/**
+ * 演習4-2 ログインを成功させ、Cookieを検証する
+ */
 test('正しいユーザー情報でログインし、CookieにTokenが保存されること検証する', async ({ page }) => {
   // ログイン画面へアクセスする
   await page.goto('http://74.226.194.15/front/login');
